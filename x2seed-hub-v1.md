@@ -2547,14 +2547,14 @@ local Window = OrionLib:MakeWindow({Name = "x2seed hub", HidePremium = false, In
 
 OrionLib:MakeNotification({
     Name = "x2seed hub",
-    Content = "",
+    Content = "รอก่อน",
     Image = "rbxassetid://8192162908",
     Time = 5
 })
 wait(3)
 OrionLib:MakeNotification({
     Name = "x2seed hub",
-    Content = "",
+    Content = "รอจกว่าจะมีการแจ้งเตือนอีกที",
     Image = "rbxassetid://8192162908",
     Time = 10
 })
