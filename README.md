@@ -4145,7 +4145,7 @@ IQ:AddToggle({
             Name = "ArenaTrainer"
         })
 
-        IQ:AddLabel("Cho thằng nào đell hiểu thì đây là tự động đánh hình nộm")
+        IQ:AddLabel("ีตีหุ่นจำลอง")
 
         IQ:AddToggle({
             Name = "Automatically hit the dummy",
