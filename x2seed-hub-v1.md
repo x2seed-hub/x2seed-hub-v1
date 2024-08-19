@@ -2530,13 +2530,13 @@ spawn(function()
         task.wait()
     until game.Players.LocalPlayer and game.Players.LocalPlayer.Team ~= nil 
     wait(1.5)
-    require(game.ReplicatedStorage.Notification).new("<Color=Red>x2seed hub สวัสดีทุกคนที่ชื่อน้อยและบังอร<Color=/>"):Display()
+    require(game.ReplicatedStorage.Notification).new("<Color=Red>x2seed hub สวัสดีทุกคน<Color=/>"):Display()
     wait(.5)
     require(game.ReplicatedStorage.Notification).new("<Color=Yellow>กรุณาใช้ Fluxus เพื่อประสบการณ์ที่ดีที่สุด!!!<Color=/>"):Display()
     wait(.24)
-    require(game.ReplicatedStorage.Notification).new("<Color=Yellow>ที่ดิสมีการอัพเดทของสคริปนี้<Color=/>"):Display()
+    require(game.ReplicatedStorage.Notification).new("<Color=Yellow>ที่ดิสมีการอัพเดทของScript<Color=/>"):Display()
     wait(.29)
-    require(game.ReplicatedStorage.Notification).new("<Color=Yellow>อย่าลืมขอบคุณบังอรด้วยละอิอิ<Color=/>"):Display()
+    require(game.ReplicatedStorage.Notification).new("<Color=Yellow>รันScriptอีกครั้งเพื่อเปิดScript<Color=/>"):Display()
     wait(.36)
 end)
 
@@ -2547,14 +2547,14 @@ local Window = OrionLib:MakeWindow({Name = "x2seed hub", HidePremium = false, In
 
 OrionLib:MakeNotification({
     Name = "x2seed hub",
-    Content = "รอก่อน",
+    Content = "รอสคริปโหลด",
     Image = "rbxassetid://8192162908",
     Time = 5
 })
 wait(3)
 OrionLib:MakeNotification({
     Name = "x2seed hub",
-    Content = "รอจกว่าจะมีการแจ้งเตือนอีกที",
+    Content = "รอuiปุ่มหรือฟังชั่นต่างๆโหลด",
     Image = "rbxassetid://8192162908",
     Time = 10
 })
@@ -2574,19 +2574,19 @@ local M = Window:MakeTab({
 })
 
 local ST = Window:MakeTab({
-    Name = "Settings⚙️",
+    Name = "⚙Settings️",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
 
 local IQ = Window:MakeTab({
-    Name = "⚔️ Item & Quest",
+    Name = "⚔️Item & Quest",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
 
 local S = Window:MakeTab({
-    Name = "Stats📊",
+    Name = "📊Stats",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
@@ -2616,7 +2616,7 @@ local Wld = Window:MakeTab({
 })
 
 local SV = Window:MakeTab({
-    Name = "server information📈",
+    Name = "📈server information",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
@@ -2628,7 +2628,7 @@ local D = Window:MakeTab({
 })
 
 local R = Window:MakeTab({
-    Name = "Race v4☣️",
+    Name = "☣Race v4️",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
@@ -2640,7 +2640,7 @@ local SH = Window:MakeTab({
 })
 
 local C = Window:MakeTab({
-    Name = "additional🔰",
+    Name = "🔰additional",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
@@ -6393,9 +6393,9 @@ SH:AddButton({
 })
 
 C:AddButton({
-    Name = "Link mời Discord",
+    Name = "Link Discord",
     Callback = function(value)
-        setclipboard("https://discord.com/invite/NeUjYUrTat")
+        setclipboard("no Devil")
     end
 })
 
@@ -6412,7 +6412,7 @@ C:AddButton({
 })
 
 C:AddButton({
-    Name = "Open Inventory[Old]",
+    Name = "Open Inventory[ไม่ต้องใช้uiเก่า]",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("getInventoryWeapons")
         wait(1)
